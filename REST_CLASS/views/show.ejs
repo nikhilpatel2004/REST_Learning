@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Post in Details</title>
+  <link rel="stylesheet" href="/styles.css">
+  <style>
+    .info {
+      font-size: 14px;
+      margin-bottom: 8px;
+      color: #218c34;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+  <h1>Post in Details</h1>
+
+  <p class="info">Post ID: <%= post.id %></p>
+
+  <div class="post">
+    <h3 class="user">@<%= post.username %></h3>
+    <h4 class="content"><%= post.content %></h4>
+  </div>
+</body>
+</html>
